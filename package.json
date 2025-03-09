@@ -1,15 +1,21 @@
 {
   "name": "jest-unit-testing-examples",
   "version": "0.0.1",
-  "description": "Jest unit testing examples",
-  "main": "index.js",
+  "description": "Jest unit testing examples with TypeScript",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^18.15.0",
     "babel-core": "^6.26.0",
     "babel-jest": "^29.7",
     "babel-preset-airbnb": "^2.4.0",
-    "jest": "^29.7"
+    "jest": "^29.7",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.0.0"
   },
   "scripts": {
+    "build": "tsc",
     "test": "jest --ci",
     "test:watch": "jest --watch",
     "snyk-protect": "snyk protect",

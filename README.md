@@ -1,39 +1,38 @@
-## Jest Unit Testing Examples
+# Jest Unit Testing Examples in TypeScript
 
-Welcome to the world of [Jest](https://facebook.github.io/jest/) testing!
+A simple repository to demonstrate Jest unit testing with TypeScript.
 
-Our mission is to break you into this world gently. So let's begin...
+## Setup
 
-## Pre-requisites
-* You will need to have access to the command-line, for Linux/Mac a Terminal or on Windows it will be a command prompt (`cmd`)
-* You will need to have git installed: http://git-scm.com/downloads
-* NodeJS & npm - https://nodejs.org **or** via NVM (https://github.com/creationix/nvm)
-* yarn [optional] - https://yarnpkg.com
+```bash
+# Install dependencies
+npm install
 
-## Download
+# Build the TypeScript code
+npm run build
 
-Just use `git` to clone the ssh version:
+# Run tests
+npm test
 
-    git clone git@github.com:jhbsk/jest-unit-testing-examples.git
+# Run tests in watch mode
+npm run test:watch
+```
 
-**Or** use `git` to clone the https version:
+## Project Structure
 
-	git clone https://github.com/jhbsk/jest-unit-testing-examples.git
+- `src/` - Contains TypeScript source files
+  - `simple.ts` - A simple function that adds two numbers
+  - `advanced.ts` - A more complex class with async functionality
+  - `simple.test.ts` - Unit test for the simple add function
 
-**Or** download the .zip archive and unzip it to the folder `jest-unit-testing-examples`:
+## About This Project
 
-	https://github.com/jhbsk/jest-unit-testing-examples/archive/master.zip
+This is a minimal example of a TypeScript project with Jest unit tests. The project demonstrates:
 
-## Installation
+- TypeScript integration with Jest
+- A simple unit test for a pure function
+- Proper project structure for TypeScript testing
 
-On the command-line or Terminal, navigate to the root of the directory which you downloaded and run:
+## License
 
-* If you have npm: `npm install`
-* If you have yarn: `yarn install`
-
-## Running tests
-
-Here are a few commands you should now be able to run:
-
-* Run Jest tests once: `npm test` or `yarn test`
-* Run Jest in watch mode (great for TDD): `npm run test:watch` or `yarn test:watch`
+MIT
